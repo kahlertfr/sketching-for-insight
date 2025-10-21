@@ -55,8 +55,13 @@ section {
 section h2 {
     font-size: 2em;
     margin-bottom: 25px;
-    color: #1e90ff;
-    border-bottom: 3px solid #1e90ff;
+    background: linear-gradient(135deg, #1e90ff 0%, #20b2aa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #1e90ff 0%, #20b2aa 100%);
+    border-image-slice: 1;
     padding-bottom: 10px;
 }
 
@@ -216,7 +221,10 @@ section h2 {
 .data-description h3,
 .analysis-tasks h3 {
     font-size: 1.5em;
-    color: #1e90ff;
+    background: linear-gradient(135deg, #1e90ff 0%, #20b2aa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 15px;
 }
 
@@ -464,10 +472,10 @@ section h2 {
 
 /* Contact Section */
 .contact-box {
-    background: linear-gradient(135deg, #e0f2f7 0%, #b2dfdb 100%);
+    background: linear-gradient(135deg, #d4f1d4 0%, #a8e6cf 100%);
     padding: 40px;
     border-radius: 8px;
-    border-left: 5px solid #1e90ff;
+    border-left: 5px solid #20b2aa;
 }
 
 .contact-info h3 {
@@ -478,7 +486,7 @@ section h2 {
 
 .contact-title {
     font-size: 1.2em;
-    color: #1e90ff;
+    color: #20b2aa;
     font-weight: 600;
     margin-bottom: 5px;
 }
@@ -491,7 +499,7 @@ section h2 {
 
 .contact-link {
     display: inline-block;
-    color: #1e90ff;
+    color: #20b2aa;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1em;
@@ -499,7 +507,7 @@ section h2 {
 }
 
 .contact-link:hover {
-    color: #20b2aa;
+    color: #1e8f7a;
     transform: translateX(5px);
 }
 
