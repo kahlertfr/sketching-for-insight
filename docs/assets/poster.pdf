@@ -1,0 +1,14 @@
+PLACEHOLDER - Poster PDF
+
+Replace this file with your conference poster in PDF format.
+
+Instructions:
+1. Save this file with the same name: poster.pdf
+2. Place it in the docs/assets/ directory
+3. The download link will automatically work once the PDF is in place
+
+Recommended specifications:
+- Format: PDF
+- Size: A0 or standard poster size (typically 36" x 48" or similar)
+- Resolution: High quality for printing (300 DPI)
+- File size: Keep under 10MB if possible for web delivery

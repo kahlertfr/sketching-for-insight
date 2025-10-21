@@ -1,0 +1,22 @@
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e90ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#20b2aa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#grad2)"/>
+  <rect x="40" y="40" width="720" height="920" fill="white" opacity="0.1"/>
+  <text x="50%" y="45%" text-anchor="middle" fill="white" font-size="48" font-family="Arial, sans-serif" font-weight="bold">
+    Conference Poster
+  </text>
+  <text x="50%" y="52%" text-anchor="middle" fill="white" font-size="24" font-family="Arial, sans-serif">
+    Preview Image
+  </text>
+  <text x="50%" y="58%" text-anchor="middle" fill="white" font-size="18" font-family="Arial, sans-serif" opacity="0.8">
+    Replace with your poster preview
+  </text>
+  <text x="50%" y="62%" text-anchor="middle" fill="white" font-size="16" font-family="Arial, sans-serif" opacity="0.7">
+    (800 x 1000 px recommended)
+  </text>
+</svg>
