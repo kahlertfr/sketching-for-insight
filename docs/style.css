@@ -20,7 +20,7 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e90ff 0%, #20b2aa 100%);
     color: white;
     padding: 60px 0;
     text-align: center;
@@ -55,8 +55,8 @@ section {
 section h2 {
     font-size: 2em;
     margin-bottom: 25px;
-    color: #667eea;
-    border-bottom: 3px solid #667eea;
+    color: #1e90ff;
+    border-bottom: 3px solid #1e90ff;
     padding-bottom: 10px;
 }
 
@@ -107,8 +107,8 @@ section h2 {
 }
 
 .download-item:hover {
-    border-color: #667eea;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+    border-color: #1e90ff;
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.2);
     transform: translateY(-5px);
 }
 
@@ -130,19 +130,19 @@ section h2 {
 
 .download-button {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e90ff 0%, #20b2aa 100%);
     color: white;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 25px;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.3);
 }
 
 .download-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 6px 15px rgba(30, 144, 255, 0.4);
 }
 
 /* Poster Preview Section */
@@ -171,10 +171,10 @@ section h2 {
 
 /* Contact Section */
 .contact-box {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #e0f2f7 0%, #b2dfdb 100%);
     padding: 40px;
     border-radius: 8px;
-    border-left: 5px solid #667eea;
+    border-left: 5px solid #1e90ff;
 }
 
 .contact-info h3 {
@@ -185,7 +185,7 @@ section h2 {
 
 .contact-title {
     font-size: 1.2em;
-    color: #667eea;
+    color: #1e90ff;
     font-weight: 600;
     margin-bottom: 5px;
 }
@@ -198,7 +198,7 @@ section h2 {
 
 .contact-link {
     display: inline-block;
-    color: #667eea;
+    color: #1e90ff;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1em;
@@ -206,7 +206,7 @@ section h2 {
 }
 
 .contact-link:hover {
-    color: #764ba2;
+    color: #20b2aa;
     transform: translateX(5px);
 }
 
