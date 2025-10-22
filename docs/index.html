@@ -24,7 +24,7 @@
                 </div>
                 <div class="abstract-text">
                     <p>
-                        Dense 3D motion data is difficult to analyze with 2D tools— clutter and occlusion often hide important patterns, while automated methods like clustering offer limited flexibility for exploration. Shape-based similarity matching addresses this by highlighting trajectories with similar geometry, reducing clutter and guiding attention to relevant motion [1]. Building on prior work showing that VR sketching effectively captures conceived shapes in design tasks [2], we use it here as an intuitive way to define trajectory queries. We explored this approach in analysis sessions with a domain expert in flotation.
+                        Dense 3D motion data is difficult to analyze with 2D tools— clutter and occlusion often hide important patterns, while automated methods like clustering offer limited flexibility for exploration. Shape-based similarity matching addresses this by highlighting trajectories with similar geometry, reducing clutter and guiding attention to relevant motion <a href="#ref1" class="citation">[1]</a>. Building on prior work showing that VR sketching effectively captures conceived shapes in design tasks <a href="#ref2" class="citation">[2]</a>, we use it here as an intuitive way to define trajectory queries. We explored this approach in analysis sessions with a domain expert in flotation.
                     </p>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                 <div class="data-description">
                     <h3>Dataset Description</h3>
                     <p>
-                        The 3D motion dataset is created through a numerical flotation simulation [3] with 560 time steps over 0.5 seconds leading to 4 million particle and 135 bubble trajectories.
+                        The 3D motion dataset is created through a numerical flotation simulation <a href="#ref3" class="citation">[3]</a> with 560 time steps over 0.5 seconds leading to 4 million particle and 135 bubble trajectories.
                     </p>
                 </div>
                 <div class="analysis-tasks">
@@ -138,7 +138,7 @@
                 </div>
                 <div class="tool-item">
                     <img src="assets/tool-4.jpg" alt="A screenshot of a retrieved trajectory segment colored in green with the not matching part of the trajectory colored in grey.">
-                    <p>Retrieving trajectories with symbolic encoding and edit-distancebased matching [1].</p>
+                    <p>Retrieving trajectories with symbolic encoding and edit-distancebased matching <a href="#ref1" class="citation">[1]</a>.</p>
                 </div>
             </div>
         </section>
@@ -271,12 +271,86 @@
         </section>
 
 
+        <!-- References Section -->
+        <section class="references-section">
+            <h2>References</h2>
+            <div class="references-content">
+                <div class="reference-item" id="ref1">
+                    <span class="reference-number">[1]</span>
+                    <span class="reference-text">Author et al., "Shape-based Similarity Matching for Trajectory Analysis", Conference/Journal Name, Year.</span>
+                </div>
+                <div class="reference-item" id="ref2">
+                    <span class="reference-number">[2]</span>
+                    <span class="reference-text">Author et al., "VR Sketching for Design Tasks", Conference/Journal Name, Year.</span>
+                </div>
+                <div class="reference-item" id="ref3">
+                    <span class="reference-number">[3]</span>
+                    <span class="reference-text">Author et al., "Numerical Flotation Simulation", Conference/Journal Name, Year.</span>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
         <div class="container">
+            <div class="footer-logos">
+                <a href="https://tu-dresden.de" target="_blank" class="footer-logo-link">
+                    <img src="assets/logo-placeholder-1.svg" alt="TU Dresden Logo" class="footer-logo">
+                </a>
+                <a href="https://scads.ai" target="_blank" class="footer-logo-link">
+                    <img src="assets/logo-placeholder-2.svg" alt="ScaDS.AI Logo" class="footer-logo">
+                </a>
+                <a href="https://example.com" target="_blank" class="footer-logo-link">
+                    <img src="assets/logo-placeholder-3.svg" alt="Institute Logo" class="footer-logo">
+                </a>
+            </div>
             <p>&copy; 2025 - Sketching for Insight. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Lightbox Modal for Full-Size Images -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <script>
+        // Add click handlers to all images except those in the download section
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(function(img) {
+                // Skip images in download section
+                if (!img.closest('.downloads-section')) {
+                    img.style.cursor = 'pointer';
+                    img.addEventListener('click', function() {
+                        openLightbox(this.src, this.alt);
+                    });
+                }
+            });
+        });
+
+        function openLightbox(src, alt) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+            
+            lightbox.style.display = 'flex';
+            lightboxImg.src = src;
+            caption.textContent = alt;
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        // Close lightbox on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
 </body>
 </html>
