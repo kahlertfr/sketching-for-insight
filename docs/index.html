@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sketching for Insight - Conference Poster</title>
+    <title>Sketching for Insight - Poster Presentation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Sketching for Insight</h1>
-            <p class="subtitle">Conference Poster Presentation</p>
+            <h1>Sketching for Insight: <br>Trajectory Retrieval in VR with Flotation Data</h1>
+            <p class="subtitle">Franziska Kahlert, Benedikt Tiedemann, Jochen Fröhlich, Stefan Gumhold</p>
         </div>
     </header>
 
     <main class="container">
         <!-- Abstract Section -->
         <section class="abstract-section">
-            <h2>Abstract</h2>
+            <h2>What Can We Learn from Sketching Through Data in Virtual Reality?</h2>
             <div class="abstract-content">
                 <div class="teaser-image">
-                    <img src="assets/teaser.png" alt="Teaser image for the project">
+                    <img src="assets/teaser.png" alt="Teaser image for the project: An image of trajectories of particles of a flotation simulation visualized as blue-green-yellow ribbons.">
                 </div>
                 <div class="abstract-text">
                     <p>
-                        This is a placeholder for your abstract. Replace this text with a concise summary 
-                        of your research, methodology, and key findings. The abstract should provide readers 
-                        with a clear understanding of your work and its significance in the field.
-                    </p>
-                    <p>
-                        You can add multiple paragraphs here to fully describe your research objectives, 
-                        methods, results, and conclusions. Make sure to highlight the main contributions 
-                        and what makes your work unique or innovative.
+                        Dense 3D motion data is difficult to analyze with 2D tools— clutter and occlusion often hide important patterns, while automated methods like clustering offer limited flexibility for exploration. Shape-based similarity matching addresses this by highlighting trajectories with similar geometry, reducing clutter and guiding attention to relevant motion [1]. Building on prior work showing that VR sketching effectively captures conceived shapes in design tasks [2], we use it here as an intuitive way to define trajectory queries. We explored this approach in analysis sessions with a domain expert in flotation.
                     </p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Takeaways Section -->
+        <section class="takeaways-section">
+            <h2>Takeaways from Our Analysis Session</h2>
+            <div class="takeaways-content">
+                <p>
+                    Immersive sketching supports visual hypothesis exploration — simple planar sketches often serve as a starting point to retrieve complex 3D motion patterns, which can then be refined by sketching 3D paths or selecting trajectory segments from the results.
+                </p>
             </div>
         </section>
 
@@ -42,13 +45,13 @@
             <h2>Downloads</h2>
             <div class="download-grid">
                 <div class="download-item">
-                    <div class="download-icon">📄</div>
+                    <div class="download-poster"><img src="assets/paper.png" alt="image of the poster"></div>
                     <h3>Research Paper</h3>
                     <p>2-page conference paper (PDF)</p>
                     <a href="assets/paper.pdf" class="download-button" download>Download Paper</a>
                 </div>
                 <div class="download-item">
-                    <div class="download-icon">🖼️</div>
+                    <div class="download-poster"><img src="assets/poster.png" alt="image of the poster"></div>
                     <h3>Poster</h3>
                     <p>Full-size poster (PDF)</p>
                     <a href="assets/poster.pdf" class="download-button" download>Download Poster</a>
@@ -56,28 +59,27 @@
             </div>
         </section>
 
-        <!-- Our Immersive Tool Section -->
-        <section class="tool-section">
-            <h2>Our Immersive Tool</h2>
-            <div class="tool-grid">
-                <div class="tool-item">
-                    <img src="assets/tool-1.png" alt="Tool feature 1">
-                    <p>Description of the first feature of your immersive tool. Explain how it enhances the user experience.</p>
-                </div>
-                <div class="tool-item">
-                    <img src="assets/tool-2.png" alt="Tool feature 2">
-                    <p>Description of the second feature. Highlight the innovative aspects and benefits.</p>
-                </div>
-                <div class="tool-item">
-                    <img src="assets/tool-3.png" alt="Tool feature 3">
-                    <p>Description of the third feature. Detail the technical implementation or unique functionality.</p>
-                </div>
-                <div class="tool-item">
-                    <img src="assets/tool-4.png" alt="Tool feature 4">
-                    <p>Description of the fourth feature. Emphasize how it contributes to the overall solution.</p>
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2>Your feedback is welcome and valued</h2>
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h3>Franziska Kahlert</h3>
+                    <p class="contact-title">Phd-student</p>
+                    <p class="contact-affiliation">Chair of Computer Graphics and Visualization at TUD Dresden University of Technology and ScaDS.AI</p>
+                    <a href="https://vcard.tu-dresden.de/franziska.kahlert/" class="contact-link" target="_blank">
+                        View University Profile →
+                    </a>
                 </div>
             </div>
         </section>
+
+        <div class="takeaways-section">
+        <h1> 
+            Diving deeper into the approach
+        </h1>
+        </div>
+
 
         <!-- Challenging Data Section -->
         <section class="data-section">
@@ -85,87 +87,117 @@
             <div class="data-content">
                 <div class="data-images">
                     <div class="data-image-item">
-                        <img src="assets/data-1.png" alt="Data visualization 1">
+                        <img src="assets/data-1.png" alt="An image of trajectories of particles of a flotation simulation visualized as blue-green-yellow ribbons.">
                     </div>
                     <div class="data-image-item">
-                        <img src="assets/data-2.png" alt="Data visualization 2">
+                        <img src="assets/data-2.png" alt="An image of trajectories of bubbles of a flotation data set visualized as blue-green-yellow colored ribbons together with spheres representing the bubbles.">
                     </div>
                 </div>
                 <div class="data-description">
                     <h3>Dataset Description</h3>
                     <p>
-                        Describe your dataset here. Include details about the data source, size, complexity, 
-                        and any particular challenges it presents. Explain what makes this dataset interesting 
-                        or difficult to analyze.
+                        The 3D motion dataset is created through a numerical flotation simulation [3] with 560 time steps over 0.5 seconds leading to 4 million particle and 135 bubble trajectories.
                     </p>
                 </div>
                 <div class="analysis-tasks">
                     <h3>Typical Analysis Tasks</h3>
                     <ul class="task-list">
                         <li>
-                            <strong>Task 1:</strong> Description of the first typical analysis task that users 
-                            need to perform with this data.
+                            <strong>Task 1:</strong> Characterize typical bubble motion.
                         </li>
                         <li>
-                            <strong>Task 2:</strong> Description of the second analysis task, explaining its 
-                            importance and complexity.
+                            <strong>Task 2:</strong> Identify common particle motion patterns.
                         </li>
                         <li>
-                            <strong>Task 3:</strong> Description of the third task, highlighting specific 
-                            challenges or requirements.
+                            <strong>Task 3:</strong> Locate regions of similar particle motion.
                         </li>
                         <li>
-                            <strong>Task 4:</strong> Description of the fourth task, detailing expected outcomes 
-                            or insights.
+                            <strong>Task 4:</strong> Analyze particle-bubble interactions.
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <!-- Our Immersive Tool Section -->
+        <section class="tool-section">
+            <h2>Our Immersive Tool</h2>
+            <p>We developed an immersive analysis tool for exploring 3D trajectory data using sketch-based retrieval. Users draw motion patterns in space using a VR controller, and the system retrieves similar segments from a dataset based on shape similarity.</p>
+            <div class="tool-grid">
+                <div class="tool-item">
+                    <img src="assets/tool-1.png" alt="A screenshot of the analysis tool showing colored ribbons for the trajectories and spheres for the particles and bubbles.">
+                    <p>Visualizing trajectories as colored ribbons and particles as textured spheres to illustrate orientation.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/tool-2.jpg" alt="A screenshot of the analysis tool showing a sketched trajectory in grey and the VR controller while sketching.">
+                    <p>Sketching motion patterns directly in 3D space using VR controllers.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/tool-3.jpg" alt="A screenshot of the analysis tool showing the VR controller selecting a green colored segment of a trajectory through a wireframe indicator.">
+                    <p>Selecting a segment from sketched or existing trajectories to create a query.</p>
+                </div>
+                <div class="tool-item">
+                    <img src="assets/tool-4.jpg" alt="A screenshot of a retrieved trajectory segment colored in green with the not matching part of the trajectory colored in grey.">
+                    <p>Retrieving trajectories with symbolic encoding and edit-distancebased matching [1].</p>
+                </div>
+            </div>
+        </section>
+
+
+
         <!-- Real Exploration Scenario Section -->
         <section class="scenario-section">
             <h2>A Real Exploration Scenario from Our Use Case</h2>
             <div class="scenario-content">
                 <p class="scenario-intro">
-                    This section describes a real-world exploration scenario. Replace this text with your actual 
-                    scenario description. Each sentence or key point in your description can correspond to one of 
-                    the images below, providing a visual narrative of the exploration process.
+                    The expert began with a planar C-shaped sketch, based on a 2D drawing of their expectation that particles would move around rising bubbles (T4). The initial retrieval confirmed a few matching patterns. 
+                    
                 </p>
                 <div class="scenario-images">
                     <div class="scenario-row">
                         <div class="scenario-item">
-                            <img src="assets/scenario-1.png" alt="Scenario step 1">
-                            <p class="scenario-caption">Initial exploration phase</p>
+                            <img src="assets/scenario-1.jpg" alt="A figure showing a 2D illustration of the expectation of particle movements around bubbles resulting in lines around a circle with some ending outside and some on the circle.">
+                            <p class="scenario-caption">Expectations illustrated in 2D</p>
                         </div>
                         <div class="scenario-item">
-                            <img src="assets/scenario-2.png" alt="Scenario step 2">
-                            <p class="scenario-caption">Pattern identification</p>
+                            <img src="assets/scenario-2.jpg" alt="An image showing a C-shaped sketch colored in purple in the immersive environment.">
+                            <p class="scenario-caption">Planar sketch for C-shaped path around bubble</p>
                         </div>
                         <div class="scenario-item">
-                            <img src="assets/scenario-3.png" alt="Scenario step 3">
-                            <p class="scenario-caption">Data filtering</p>
+                            <img src="assets/scenario-3.jpg" alt="An image showing few retrieval results for the C-shaped sketch colored in purple.">
+                            <p class="scenario-caption">Retrieval result for C-shaped path around bubble</p>
+                        </div>
+                        
+                    </div>
+                    <p class="scenario-intro">
+                        To explore more complex motion, the developer—more experienced with 3D input—refined the planar sketch into a spiral-like path around the bubble utilizing the full 3D space. This revealed additional instances and even regions with multiple occurrences (T3). Time-encoded visualization showed that these motions were indeed caused by rising bubbles but were obscured in the dense dataset. 
+                    </p>
+                    <div class="scenario-row">
+                        <div class="scenario-item">
+                            <img src="assets/scenario-4.jpg" alt="An image showing a 3D sprial-like sketch colored in brown in the immersive environment.">
+                            <p class="scenario-caption">3D Sketch for spiral-shaped path around bubble</p>
+                        </div>
+                        <div class="scenario-item">
+                            <img src="assets/scenario-5.jpg" alt="An image showing multiple retrieval results for the 3D spiral-like sketch colored in brown in the immersive environment.">
+                            <p class="scenario-caption">Retrieval result for spiral-shaped path around bubble</p>
+                        </div>
+                        <div class="scenario-item">
+                            <img src="assets/scenario-6.jpg" alt="An image showing a detail of the retrieval results of the 3D spiral-like sketch colored in brown in context of the trajectories of the bubbles which are represented by spheres.">
+                            <p class="scenario-caption">Detailed views of retrieval result with bubble trajectories.</p>
+                        </div>
+                        <div class="scenario-item">
+                            <img src="assets/scenario-7.jpg" alt="An image showing a detail of the retrieval result for the 3D spiral-like sketch using the color to encode time on the trajectories of the bubbles and particles together with spheres representing bubbles.">
+                            <p class="scenario-caption">Detailed views of retrieval result with time encoding.</p>
+                        </div>
+                        <div class="scenario-item">
+                            <img src="assets/scenario-8.jpg" alt="An image showing the detail of the flotation dataset without any filtering applied thus occluding the previously visible retrieval results.">
+                            <p class="scenario-caption">Detailed views of retrieval result with unfiltered dataset.</p>
                         </div>
                     </div>
                     <div class="scenario-row">
-                        <div class="scenario-item">
-                            <img src="assets/scenario-4.png" alt="Scenario step 4">
-                            <p class="scenario-caption">Deep dive analysis</p>
-                        </div>
-                        <div class="scenario-item">
-                            <img src="assets/scenario-5.png" alt="Scenario step 5">
-                            <p class="scenario-caption">Hypothesis testing</p>
-                        </div>
-                        <div class="scenario-item">
-                            <img src="assets/scenario-6.png" alt="Scenario step 6">
-                            <p class="scenario-caption">Result validation</p>
-                        </div>
-                    </div>
-                    <div class="scenario-row">
-                        <div class="scenario-item scenario-item-center">
-                            <img src="assets/scenario-7.png" alt="Scenario step 7">
-                            <p class="scenario-caption">Final insights</p>
-                        </div>
+                    <p class="scenario-intro"> 
+                        This shows how 3D sketching uncovers spatial patterns missed with planar input.
+                    </p>
                     </div>
                 </div>
             </div>
@@ -175,32 +207,41 @@
         <section class="results-section">
             <h2>More Retrieval Results</h2>
             <div class="results-grid">
+                <p class="scenario-intro"> 
+                    3D Spiral inticating turbulences.
+                </p>
                 <div class="result-item">
-                    <img src="assets/result-1.png" alt="Retrieval result 1">
+                    <img src="assets/result-1.jpg" alt="Retrieval result 1">
                 </div>
                 <div class="result-item">
-                    <img src="assets/result-2.png" alt="Retrieval result 2">
+                    <img src="assets/result-2.jpg" alt="Retrieval result 2">
                 </div>
                 <div class="result-item">
-                    <img src="assets/result-3.png" alt="Retrieval result 3">
+                    <img src="assets/result-3.jpg" alt="Retrieval result 3">
+                </div>
+                <p class="scenario-intro"> 
+                    V-shape with long descent representing falling of particle and getting caught in wake of the bubble.
+                </p>
+                <div class="result-item">
+                    <img src="assets/result-4.jpg" alt="Retrieval result 4">
                 </div>
                 <div class="result-item">
-                    <img src="assets/result-4.png" alt="Retrieval result 4">
+                    <img src="assets/result-5.jpg" alt="Retrieval result 5">
                 </div>
                 <div class="result-item">
-                    <img src="assets/result-5.png" alt="Retrieval result 5">
+                    <img src="assets/result-6.jpg" alt="Retrieval result 6">
+                </div>
+                <p class="scenario-intro"> 
+                    V-shape with long ascent indicating particle getting caught in the wake of the bubble traveling a longer than expected distance in the wake before colliding.
+                </p>
+                <div class="result-item">
+                    <img src="assets/result-7.jpg" alt="Retrieval result 7">
                 </div>
                 <div class="result-item">
-                    <img src="assets/result-6.png" alt="Retrieval result 6">
+                    <img src="assets/result-8.jpg" alt="Retrieval result 8">
                 </div>
                 <div class="result-item">
-                    <img src="assets/result-7.png" alt="Retrieval result 7">
-                </div>
-                <div class="result-item">
-                    <img src="assets/result-8.png" alt="Retrieval result 8">
-                </div>
-                <div class="result-item">
-                    <img src="assets/result-9.png" alt="Retrieval result 9">
+                    <img src="assets/result-9.jpg" alt="Retrieval result 9">
                 </div>
             </div>
         </section>
@@ -210,11 +251,9 @@
             <h2>What We Already Learned</h2>
             <div class="learned-content">
                 <ul class="learned-list">
-                    <li>Key insight or learning from your analysis. Describe important findings or observations.</li>
-                    <li>Another significant learning point. Explain how this impacts your understanding or approach.</li>
-                    <li>Important discovery or pattern identified. Detail the implications for your research.</li>
-                    <li>Valuable lesson learned from the exploration. Highlight unexpected or surprising results.</li>
-                    <li>Critical understanding gained through the process. Connect this to broader research goals.</li>
+                    <li>Sketching revealed interpretable motion types: C-shapes around bubbles, spirals indicating turbulence and V-shapes for wake entry</li>
+                    <li>Results aligned with domain expectations, supported hypothesis exploration and revealed new insights</li>
+                    <li>The expert mainly used planar sketches, likely reflecting familiarity with 2D motion illustrations, and refined queries with segments from retrieved trajectories</li>
                 </ul>
             </div>
         </section>
@@ -224,43 +263,14 @@
             <h2>What Still Needs Work</h2>
             <div class="needs-work-content">
                 <ul class="needs-work-list">
-                    <li>Challenge or limitation that needs to be addressed. Explain the current constraints.</li>
-                    <li>Area requiring further development or refinement. Detail the technical or methodological issues.</li>
-                    <li>Open question or unresolved aspect. Describe potential approaches to address this.</li>
-                    <li>Feature or capability that needs improvement. Outline planned enhancements.</li>
-                    <li>Gap in current understanding or implementation. Discuss future research directions.</li>
+                    <li>Improve the precision of mid-air sketching</li>
+                    <li>Add adaptability to the retrieval algorithm (e.g. direction of motion)</li>
+                    <li>Improve result interpretation by visualizing similarity scores</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Takeaways Section -->
-        <section class="takeaways-section">
-            <h2>Takeaways from Our Analysis Session</h2>
-            <div class="takeaways-content">
-                <p>
-                    This section provides a conclusion to your analysis session. Replace this text with your 
-                    key takeaways, summarizing the most important findings, insights, and implications of your 
-                    work. Emphasize what practitioners or researchers should remember from this presentation 
-                    and how it contributes to the field. Consider highlighting the broader impact and potential 
-                    applications of your findings.
-                </p>
-            </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <h2>Contact</h2>
-            <div class="contact-box">
-                <div class="contact-info">
-                    <h3>Your Name</h3>
-                    <p class="contact-title">Position/Title</p>
-                    <p class="contact-affiliation">University Name, Department</p>
-                    <a href="https://www.your-university.edu/your-profile" class="contact-link" target="_blank">
-                        View University Profile →
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>
