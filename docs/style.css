@@ -222,6 +222,7 @@ section h2 {
     gap: 20px;
     margin-bottom: 30px;
     align-items: center;
+    justify-content: center;
 }
 
 .data-image-item img {
@@ -533,17 +534,137 @@ section h2 {
     transform: translateX(5px);
 }
 
+/* References Section */
+.references-section {
+    background: white;
+    margin-bottom: 30px;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.references-content {
+    margin-top: 20px;
+}
+
+.reference-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 1.8;
+}
+
+.reference-item:last-child {
+    border-bottom: none;
+}
+
+.reference-number {
+    font-weight: 600;
+    color: #1e90ff;
+    margin-right: 10px;
+}
+
+.reference-text {
+    color: #555;
+}
+
+/* Citation Links */
+.citation {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.citation:hover {
+    color: #20b2aa;
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0 20px;
     margin-top: 40px;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-logo-link {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: block;
+}
+
+.footer-logo-link:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    border-radius: 4px;
 }
 
 footer p {
     opacity: 0.8;
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    animation: zoom 0.3s;
+}
+
+@keyframes zoom {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.lightbox-close:hover {
+    color: #bbb;
+}
+
+.lightbox-caption {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 80%;
+    font-size: 1.1em;
 }
 
 /* Responsive Design */
@@ -604,6 +725,24 @@ footer p {
     .learned-list li::before,
     .needs-work-list li::before {
         left: 15px;
+    }
+
+    .footer-logos {
+        gap: 20px;
+    }
+
+    .footer-logo {
+        height: 50px;
+    }
+
+    .lightbox-close {
+        top: 20px;
+        right: 30px;
+        font-size: 40px;
+    }
+
+    .lightbox-caption {
+        font-size: 0.9em;
     }
 }
 
