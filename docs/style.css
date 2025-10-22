@@ -484,6 +484,46 @@ section h2 {
     border-radius: 8px;
 }
 
+/* Video Preview with Play Icon */
+.video-preview-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.video-preview-link:hover {
+    transform: scale(1.02);
+}
+
+.video-preview-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.video-preview-link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-image: url('assets/play-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.video-preview-link:hover::after {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
 .video-caption {
     margin-top: 15px;
     text-align: center;
