@@ -1,0 +1,6 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle background with semi-transparent white -->
+  <circle cx="40" cy="40" r="38" fill="rgba(255, 255, 255, 0.9)" stroke="rgba(255, 255, 255, 0.5)" stroke-width="2"/>
+  <!-- Play triangle -->
+  <polygon points="32,25 32,55 58,40" fill="#1e90ff"/>
+</svg>
